@@ -13,7 +13,7 @@ import com.jpaproject.repositories.OrderRepository;
 
 @Service
 public class OrderService {
-	
+
 	@Autowired
 	private OrderRepository repository;
 	
@@ -25,5 +25,4 @@ public class OrderService {
 		Optional<Order> obj = repository.findById(id);
 		return obj.get();
 	}
-
 }
